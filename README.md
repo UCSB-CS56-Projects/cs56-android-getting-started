@@ -11,3 +11,4 @@ A CS56 project that describes how to get started with Android Programming in the
 Some older resources that might be helpful to compare (even though they are way out of date) are here:
 
 
+https://foo.cs.ucsb.edu/56wiki/index.php/Android
