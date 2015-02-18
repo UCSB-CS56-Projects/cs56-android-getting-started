@@ -12,3 +12,9 @@ Some older resources that might be helpful to compare (even though they are way 
 
 
 https://foo.cs.ucsb.edu/56wiki/index.php/Android
+
+# To install Android Studio 
+
+* Windows: https://github.com/UCSB-CS56-Projects/cs56-android-getting-started/blob/master/docs/InstallSoftware/InstallAndroidStudioOnWindows.md
+* Mac: TODO: put link here
+* Linux: TODO: put link here
