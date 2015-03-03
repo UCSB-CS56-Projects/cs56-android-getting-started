@@ -114,7 +114,7 @@ public void onCreate(Bundle savedInstanceState) {
 A Service is an application component representing either an application's desire to perform a longer-running operation while not interacting with the user or to supply functionality for other applications to use. (e.g. When you use Google Music and the music keeps playing even though you traveled away from the application; or when you use Snapchat and even though you haven't opened the application you still get Stevie's annoying snaps....yes we get it Stevie, you are eating a delicious hamburger...sheesh!)
 
 
-While not all applications will need to use services, it might be useful to know that they exist. We will study them more closely on [Chapter 3](todo)
+While not all applications will need to use services, it might be useful to know that they exist. We will study them more closely [further on](../3_Intro_to_Services/3_Intro_to_Services.md)
 
 <h2 id="1_sources">Sources & Further Reading</h2>
 - Activities: https://developer.android.com/guide/components/activities.html
