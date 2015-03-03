@@ -12,6 +12,7 @@
 - [Setting up Android Phone for Testing](#0_phone)
 - [SDK Manager](#0_sdkManager)
 - [Sources & Further Reading](#0_sources)
+
 ---
 
 
@@ -33,21 +34,23 @@ Android Studio is constantly reinventing itself, so rather than give you an in-d
 - **Step 3: Adding any necessary SDK packages**
 By default, Android Studio will come with all the SDK packages that you need, but if for some reason you don't have them (e.g. You installed the standalone Android Studio). As a minimum when setting up the Android SDK, you should download the latest tools and Android platform:
 ![Taken from https://developer.android.com/sdk/installing/adding-packages.html](0_sdk.png)
+
 Go into Android Studio and choose **Tools > Android > SDK Manager**
-	1. Open the Tools directory and select:
-		- **Android SDK Tools** 
-		- **Android SDK Plataform-tools**
-		- **Android SDK Build-tools** (highest vesrsion)
-	2. Open the first Android X.X folder (the latest version) and select:
-		- **SDK Plataform**
-		- System image for the emulator, such as **ARM EABI v7a System Image**
-	3. Open the Extras Folder and select:
-		- **Google USB Driver** *(Super important for actual phone testing)*
-		- **Android Support Library**
-		- **Android Support Repository**
-		- **Google Repository**
-		- (Optional) **Intel x86 Emulator Accelerator** *(Makes the default emulator a bit more efficient and fast)*
-		
+
+1. Open the Tools directory and select:
+	- **Android SDK Tools** 
+	- **Android SDK Plataform-tools**
+	- **Android SDK Build-tools** (highest vesrsion)
+2. Open the first Android X.X folder (the latest version) and select:
+	- **SDK Plataform**
+	- System image for the emulator, such as **ARM EABI v7a System Image**
+3. Open the Extras Folder and select:
+	- **Google USB Driver** *(Super important for actual phone testing)*
+	- **Android Support Library**
+	- **Android Support Repository**
+	- **Google Repository**
+	- (Optional) **Intel x86 Emulator Accelerator** *(Makes the default emulator a bit more efficient and fast)*
+	
 
 <h2 id="0_emulator">Setting up Emulators</h2>
 <h3>Emulation Options</h3>
