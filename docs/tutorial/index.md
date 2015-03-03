@@ -2,21 +2,21 @@
 <h6>Last updated: pmsosa | Winter 2015</h6>
 ###INDEX###
 
-0. [Setting Up Android Studio](0_Installing_Software/0_Installing_Software.md)
+0. #####[Setting Up Android Studio](0_Installing_Software/0_Installing_Software.md)#####
 	- [Setting up Android Studio](0_Installing_Software/0_Installing_Software.md#0_androidStudio)
 	- [Setting up Android Emulation](0_Installing_Software/0_Installing_Software.md#0_emulator)
 	- [Setting up Android Phone for Testing](0_Installing_Software/0_Installing_Software.md#0_phone)
 	- [SDK Manager](0_Installing_Software/0_Installing_Software.md#0_sdkManager)
 	- [Sources & Further Reading](0_Installing_Software/0_Installing_Software.md#0_sources)
 
-1. [Anatomy of a Basic Android App](1_Basic_Anatomy_of_an_Activity/1_Basic_Anatomy_of_an_Activity.md)
+1. #####[Anatomy of a Basic Android App](1_Basic_Anatomy_of_an_Activity/1_Basic_Anatomy_of_an_Activity.md)#####
 	- [Activities](1_Basic_Anatomy_of_an_Activity/1_Basic_Anatomy_of_an_Activity.md#1_activities)
 	- [Manifest](1_Basic_Anatomy_of_an_Activity/1_Basic_Anatomy_of_an_Activity.md#1_manifest)
 	- [Layouts](1_Basic_Anatomy_of_an_Activity/1_Basic_Anatomy_of_an_Activity.md#1_layouts)
 	- [Services](1_Basic_Anatomy_of_an_Activity/1_Basic_Anatomy_of_an_Activity.md#1_services)
 	- [Sources & Further Reading](1_Basic_Anatomy_of_an_Activity/1_Basic_Anatomy_of_an_Activity.md#1_sources)
 
-2. [Building your first Android App](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md)
+2. #####[Building your first Android App](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md)#####
 	- [Objective](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_objective)
 	- [Starting a new project](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_starting)
 	- [Testing & Running](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_testing)
@@ -25,7 +25,7 @@
 	- [Final Files](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_files)
 	- [Sources & Further Reading](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_sources)
 
-3. [Intro to Services and Broadcast Receivers](3_Intro_to_Services/3_Intro_to_Services.md)
+3. #####[Intro to Services and Broadcast Receivers](3_Intro_to_Services/3_Intro_to_Services.md)#####
 	- [Objective](3_Intro_to_Services/3_Intro_to_Services.md#3_objective)
 	- [Services Basics](3_Intro_to_Services/3_Intro_to_Services.md#3_basics)
 	- [Broadcast Receivers Basics](3_Intro_to_Services/3_Intro_to_Services.md#3_broadcast)
@@ -34,7 +34,7 @@
 	- [Sources & Further Reading](3_Intro_to_Services/3_Intro_to_Services.md#3_sources)
 
 
-7. [Credits & Extra Links](7_links/7_links.md)
+7. #####[Credits & Extra Links](7_links/7_links.md)#####
 
 
 <!--5. [<h5>Extra: Coding Games</h5>](todo)-->
