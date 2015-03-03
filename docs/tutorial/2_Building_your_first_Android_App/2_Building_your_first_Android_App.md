@@ -171,6 +171,7 @@ Now that you know how to change an UI object's properties you can choose to decl
 	    }
 	});	
 	```
+	
 <h4>Coding the 'test_prime' function</h4>
 
 Using the previous concepts and ideas we can quickly build a simple function that not only tests for primes but also The following is going to be the test_prime function.
