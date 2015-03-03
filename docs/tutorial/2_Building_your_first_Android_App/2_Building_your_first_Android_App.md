@@ -234,7 +234,7 @@ That's all there really is to it. You just built a simple program that can help 
 <h2 id="2_files">Final Code</h2>
 
 Here are the complete manifest and class files for this project.
-You can find the complete project [here](/HelloWorld).
+You can find the complete project [here](HelloWorld).
 
 <h5>MainActivity.java</h5>
 
