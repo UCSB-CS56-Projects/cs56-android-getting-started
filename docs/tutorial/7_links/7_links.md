@@ -29,7 +29,7 @@ You probably already have a ton of interesting ideas that you want to test out o
 - Google Maps Android API: https://developers.google.com/maps/documentation/android/
 
 ##Credits
-Tutorial and code by [Pedro M. Sosa](www.ko) <!--Aka. KonukoII --> for the CS56 Winter 2015 course taught by Phill Conrad. Parts of this tutorial taken from [Android Developer](https://developer.android.com/index.html) and [Vogella](http://www.vogella.com/tutorials/android.html) *(as noted on each sections sources)*
+Tutorial and code by [Pedro M. Sosa](www.konuko.com) for the CS56 Winter 2015 course taught by Phill Conrad. Parts of this tutorial taken from [Android Developer](https://developer.android.com/index.html) and [Vogella](http://www.vogella.com/tutorials/android.html) *(as noted on each sections sources)*
 
 Hope this helps you jumpstart on your Android programming future.
 
