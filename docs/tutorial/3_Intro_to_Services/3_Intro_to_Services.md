@@ -196,7 +196,7 @@ protected void onCreate(Bundle savedInstanceState) {
 <h2 id="3_files">Final Code</h2>
 
 Here are the complete manifest and class files for this project.
-You can find the complete project [here](/SimpleService).
+You can find the complete project [here](SimpleService).
 
 <h5>MainActivity.java</h5>
 
