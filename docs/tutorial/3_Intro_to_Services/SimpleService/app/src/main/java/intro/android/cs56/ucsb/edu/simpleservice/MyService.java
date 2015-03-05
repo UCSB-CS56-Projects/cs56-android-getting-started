@@ -1,9 +1,5 @@
 package intro.android.cs56.ucsb.edu.simpleservice;
 
-/**
- * Created by TransAtlantic on 3/2/2015.
- */
-
 import android.app.Service;
 import android.util.Log;
 import android.widget.Toast;
