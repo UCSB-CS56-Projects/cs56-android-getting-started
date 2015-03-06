@@ -1,5 +1,7 @@
 <h1>2. Building your first Android App</h1>
 <h6>Last updated: pmsosa | Winter 2015</h6>
+######[Back to index](../index.md)######
+
 <h2 id="2_index">Index</h2>
 
 - [Objective](#2_objective)
@@ -386,6 +388,8 @@ public class MainActivity extends ActionBarActivity {
 - Android Interface Tutorial: https://developer.android.com/training/basics/firstapp/building-ui.html
 - Tuts+ Android GUI Tutorial: http://code.tutsplus.com/tutorials/android-sdk-user-interface-design--mobile-20323
 
+----------
+######[Back to index](../index.md)######
 
 <!--pmsosa CS56 Winter 2015-->
 
