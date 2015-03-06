@@ -1,4 +1,4 @@
-#How this tutorial was built#
+#How To Build Tutorials in Github#
 
 Essentially you can use Github flavored Markdown and some (limited) HTML code. More info on this can be found at: https://help.github.com/articles/github-flavored-markdown/
 
