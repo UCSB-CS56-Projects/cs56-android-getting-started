@@ -3,4 +3,4 @@ A CS56 project that describes how to get started with Android Programming in the
 
 ##[Proceed to the Tutorial](/docs/tutorial/index.md)##
 
-###[How was this tutorial built?](GitTutorialBuilding.md)###
+####[How was this tutorial built?](GitTutorialBuilding.md)####
