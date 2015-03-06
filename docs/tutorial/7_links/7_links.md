@@ -1,6 +1,6 @@
 <h1>8. Credits and Extra Links</h1>
 <h6>Last updated: pmsosa | Winter 2015</h6>
-
+######[Back to index](../index.md)######
 ##Extra Links
 
 You probably already have a ton of interesting ideas that you want to test out on Android. If you don't then consider that a Android phones tend to have anything from GPS, Accelerometer, Mobile Interface, NFC, Bluetooth, Cameras, Multi-touch screens, Speakers, and a bunch of other things. Add to that the fact that a bunch of other devices (e.g TVs, Glasses, Watches, even Refrigerators!) are using Android. Just let that stew in for a while and I'm sure you will quickly start thinking about all the crazy cool stuff you can build.  Here are some good links that will help you jumpstart your project.
@@ -31,7 +31,7 @@ You probably already have a ton of interesting ideas that you want to test out o
 ##Credits
 Tutorial and code by [Pedro M. Sosa](www.konuko.com) for the CS56 Winter 2015 course taught by Phill Conrad. Parts of this tutorial taken from [Android Developer](https://developer.android.com/index.html) and [Vogella](http://www.vogella.com/tutorials/android.html) *(as noted on each sections sources)*
 
-Hope this helps you jumpstart on your Android programming future.
+Hope this helps you jumpstart on your Android programming future!
 
 <!--
 Guía escrita originalmente por Konuko II
