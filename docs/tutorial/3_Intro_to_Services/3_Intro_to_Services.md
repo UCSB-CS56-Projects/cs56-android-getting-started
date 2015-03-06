@@ -1,5 +1,7 @@
 <h1>3. Intro To Services and Broadcast Receivers</h1>
 <h6>Last updated: pmsosa | Winter 2015</h6>
+######[Back to index](../index.md)######
+
 <h2 id="3_index">Index</h2>
 
 - [Objective](#3_objective)
@@ -354,5 +356,8 @@ public class MyService extends Service{
 - Vogella's BroadcastReceivers Tutorial: http://www.vogella.com/tutorials/AndroidBroadcastReceiver/article.html#broadcastreceiver_definition
 - BroadcastReceivers Android Developer: https://developer.android.com/reference/android/content/BroadcastReceiver.html
 - BroadcastReceivers Tutorial: http://www.tutorialspoint.com/android/android_broadcast_receivers.htm
+
+----------------
+######[Back to index](../index.md)######
 
 <!--pmsosa CS56 Winter 2015-->
