@@ -1,5 +1,6 @@
 <h1>0. Installing Android Studio</h1>
 <h6>Last updated: pmsosa | Winter 2015</h6>
+######[Back to index](../index.md)######
 <h2 id="0_index">Index</h2>
 
 
@@ -103,5 +104,8 @@ For more information feel free to visit: https://developer.android.com/tools/hel
 - Device Emulation: https://developer.android.com/tools/device.html
 - ADK Manager: https://developer.android.com/tools/devices/managing-avds.html
 - SDK Manager: https://developer.android.com/tools/help/sdk-manager.html
+
+-------
+######[Back to index](../index.md)######
 
 <!--pmsosa CS56 Winter 2015-->
