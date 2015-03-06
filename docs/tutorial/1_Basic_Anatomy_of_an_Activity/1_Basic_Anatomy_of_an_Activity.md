@@ -1,5 +1,7 @@
 <h1>1. Basic Anatomy of an Activity</h1>
 <h6>Last updated: pmsosa | Winter 2015</h6>
+######[Back to index](../index.md)######
+
 <h2 id="1_index">Index</h2>
 
 - [Activities](#1_activities)
@@ -121,5 +123,8 @@ While not all applications will need to use services, it might be useful to know
 - Manifest: https://developer.android.com/guide/topics/manifest/manifest-intro.html
 - Layouts: https://developer.android.com/guide/topics/ui/declaring-layout.html
 - Services: https://developer.android.com/reference/android/app/Service.html
+
+------
+######[Back to index](../index.md)######
 
 <!--pmsosa CS56 Winter 2015-->
