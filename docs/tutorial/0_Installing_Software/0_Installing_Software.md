@@ -60,7 +60,7 @@ Go into Android Studio and choose **Tools > Android > SDK Manager**
 **GenyMotion** is an Android emulator that can be used with both Android Studio and Eclipse. It tends to be faster than the Android Studio emulators, and provides pretty much all the same functionality. You can refer to their website: https://www.genymotion.com for more information.
 Installation instructions can be found at: https://www.genymotion.com/#!/download
 
-<h3>ADV Manager</h3>
+<h3>AVD Manager</h3>
 The AVD Manager allows you to manage and edit emulation devices (anything from phones, tv, wear, etc.)
 
 It is a quite simple tool to use, however for more information please refer to: https://developer.android.com/tools/devices/managing-avds.html
