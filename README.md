@@ -23,7 +23,8 @@ A CS56 project that describes how to get started with Android Programming in the
 ***Note:* Android Studio is constantly reinventing itself and these steps could easily become deprecated in a near future so we highly recommend that you follow the latest instructions that are found at: https://developer.android.com/sdk/installing/index.html?pkg=studio**
 
 - **Step 1: Install Latest Java JDK:** http://www.oracle.com/technetwork/java/javase/downloads/index.html
-	***Note:*** For Windows you must add java as an enviornment variable Select Start menu > Computer > System Properties > Advanced System Properties. Then open Advanced tab > Environment Variables and add a new system variable JAVA_HOME that points to your JDK folder, for example C:\Program Files\Java\jdk1.8.0_21.
+	
+***Note:*** For Windows you must add java as an enviornment variable Select Start menu > Computer > System Properties > Advanced System Properties. Then open Advanced tab > Environment Variables and add a new system variable JAVA_HOME that points to your JDK folder, for example C:\Program Files\Java\jdk1.8.0_21.
 
 - **Step 2: Download and Install Android Studio + (Android SDK & Emulators):** https://developer.android.com/studio/index.html
 - To install Android Studios Proceed as follows:
@@ -57,7 +58,8 @@ A CS56 project that describes how to get started with Android Programming in the
 ***Note:* Android Studio is constantly reinventing itself and these steps could easily become deprecated in a near future so we highly recommend that you follow the latest instructions that are found at: https://developer.android.com/sdk/installing/index.html?pkg=studio**
 
 - **Step 1: Install Latest Java JDK:** http://www.oracle.com/technetwork/java/javase/downloads/index.html
-	***Note:*** There are, however, known stability issues in Android Studio on Mac when using JDK 1.8. Until these issues are resolved, you can improve stability by downgrading your JDK to an older version (but no lower than JDK 1.6)
+	
+***Note:*** There are, however, known stability issues in Android Studio on Mac when using JDK 1.8. Until these issues are resolved, you can improve stability by downgrading your JDK to an older version (but no lower than JDK 1.6)
 
 - **Step 2: Download and Install Android Studio + (Android SDK & Emulators):** https://developer.android.com/studio/index.html
 - To install Android Studios Proceed as follows:
