@@ -33,6 +33,7 @@ A CS56 project that describes how to get started with Android Programming in the
 
 - **Step 3: Adding any necessary SDK packages**
 - By default, Android Studio will come with all the SDK packages that you need, but if for some reason you don't have them (e.g. You installed the standalone Android Studio). As a minimum when setting up the Android SDK, you should download the latest tools and Android platform:
+
 ![Taken from https://developer.android.com/sdk/installing/adding-packages.html](0_sdk.png)
 
 - Go into Android Studio and choose **Tools > Android > SDK Manager**
