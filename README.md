@@ -17,10 +17,9 @@ A CS56 project that describes how to get started with Android Programming in the
 
 ---
 
+***Note:* Android Studio is constantly reinventing itself and these steps could easily become deprecated in a near future so we highly recommend that you follow the latest instructions that are found at: https://developer.android.com/sdk/installing/index.html?pkg=studio**
 
 <h2 id="0_androidWindows">Setting up Android Studio for Windows</h2>
-
-***Note:* Android Studio is constantly reinventing itself and these steps could easily become deprecated in a near future so we highly recommend that you follow the latest instructions that are found at: https://developer.android.com/sdk/installing/index.html?pkg=studio**
 
 - **Step 1: Install Latest Java JDK:** http://www.oracle.com/technetwork/java/javase/downloads/index.html
 	
@@ -54,8 +53,6 @@ A CS56 project that describes how to get started with Android Programming in the
 	- (Optional) **Intel x86 Emulator Accelerator** *(Makes the default emulator a bit more efficient and fast)*
 
 <h2 id="0_androidMac">Setting up Android Studio for Mac</h2>
-
-***Note:* Android Studio is constantly reinventing itself and these steps could easily become deprecated in a near future so we highly recommend that you follow the latest instructions that are found at: https://developer.android.com/sdk/installing/index.html?pkg=studio**
 
 - **Step 1: Install Latest Java JDK:** http://www.oracle.com/technetwork/java/javase/downloads/index.html
 	
@@ -91,8 +88,6 @@ A CS56 project that describes how to get started with Android Programming in the
 	- (Optional) **Intel x86 Emulator Accelerator** *(Makes the default emulator a bit more efficient and fast)*
 
 <h2 id="0_androidLinux">Setting up Android Studio for Linux</h2>
-
-***Note:* Android Studio is constantly reinventing itself and these steps could easily become deprecated in a near future so we highly recommend that you follow the latest instructions that are found at: https://developer.android.com/sdk/installing/index.html?pkg=studio**
 
 - **Step 1: Install Latest Java JDK:** http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
