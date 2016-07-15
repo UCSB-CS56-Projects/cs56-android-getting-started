@@ -9,8 +9,6 @@ A CS56 project that describes how to get started with Android Programming in the
 
 <h1> Installing Android Studio </h1>
 <h6>Last updated: osheaanaya | Summer 2016</h6>
-######[Back to index](../index.md)######
-<h2 id="0_index">Index</h2>
 
 - [Setting up Android Studio for Windows](#0_androidWindows)
 - [Setting up Android Studio for Mac](#0_androidMac)
@@ -62,6 +60,6 @@ A CS56 project that describes how to get started with Android Programming in the
 - Android Studio Installation Guide: https://developer.android.com/sdk/installing/index.html?pkg=studio
 
 -------
-######[Back to index](../index.md)######
+
 
 	
