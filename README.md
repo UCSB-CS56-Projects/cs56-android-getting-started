@@ -52,6 +52,42 @@ A CS56 project that describes how to get started with Android Programming in the
 	- **Google Repository**
 	- (Optional) **Intel x86 Emulator Accelerator** *(Makes the default emulator a bit more efficient and fast)*
 
+<h2 id="0_androidMac">Setting up Android Studio for Mac</h2>
+
+***Note:* Android Studio is constantly reinventing itself and these steps could easily become deprecated in a near future so we highly recommend that you follow the latest instructions that are found at: https://developer.android.com/sdk/installing/index.html?pkg=studio**
+
+- **Step 1: Install Latest Java JDK:** http://www.oracle.com/technetwork/java/javase/downloads/index.html
+	- There are, however, known stability issues in Android Studio on Mac when using JDK 1.8. Until these issues are resolved, you can improve stability by downgrading your JDK to an older version (but no lower than JDK 1.6)
+
+- **Step 2: Download and Install Android Studio + (Android SDK & Emulators):** https://developer.android.com/studio/index.html
+- To install Android Studios Proceed as follows:
+
+1. Launch the Android Studio DMG file.
+2. Drag and drop Android Studio into the Applications folder, then launch Android Studio.
+3. Select whether you want to import previous Android Studio settings, then click OK
+4. The Android Studio Setup Wizard guides you though the rest of the setup, which includes downloading Android SDK components that are required for development.
+
+- **Step 3: Adding any necessary SDK packages**
+- By default, Android Studio will come with all the SDK packages that you need, but if for some reason you don't have them (e.g. You installed the standalone Android Studio). As a minimum when setting up the Android SDK, you should download the latest tools and Android platform:
+
+   ![Taken from https://developer.android.com/sdk/installing/adding-packages.html](0_sdk.png)
+
+- Go into Android Studio and choose **Tools > Android > SDK Manager**
+
+1. Open the Tools directory and select:
+	- **Android SDK Tools** 
+	- **Android SDK Plataform-tools**
+	- **Android SDK Build-tools** (highest vesrsion)
+2. Open the first Android X.X folder (the latest version) and select:
+	- **SDK Plataform**
+	- System image for the emulator, such as **ARM EABI v7a System Image**
+3. Open the Extras Folder and select:
+	- **Google USB Driver** *(Super important for actual phone testing)*
+	- **Android Support Library**
+	- **Android Support Repository**
+	- **Google Repository**
+	- (Optional) **Intel x86 Emulator Accelerator** *(Makes the default emulator a bit more efficient and fast)*
+
 
 
 
