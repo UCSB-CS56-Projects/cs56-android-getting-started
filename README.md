@@ -27,8 +27,8 @@ A CS56 project that describes how to get started with Android Programming in the
 
 - **Step 2: Download and Install Android Studio + (Android SDK & Emulators):** https://developer.android.com/studio/index.html
 - To install Android Studios Proceed as follows:
-- 1. Launch the .exe file you downloaded. 
-- 2. Follow the setup wizard to install Android Studio and any necessary SDK tools. 
+-  Launch the .exe file you downloaded.
+-  Follow the setup wizard to install Android Studio and any necessary SDK tools. 
 
 - **Step 3: Adding any necessary SDK packages**
 By default, Android Studio will come with all the SDK packages that you need, but if for some reason you don't have them (e.g. You installed the standalone Android Studio). As a minimum when setting up the Android SDK, you should download the latest tools and Android platform:
