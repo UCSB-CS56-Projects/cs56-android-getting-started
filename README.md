@@ -100,7 +100,7 @@ A CS56 project that describes how to get started with Android Programming in the
 1. Unpack the .zip file you downloaded to an appropriate location for your applications, such as within /usr/local/ for your user profile, or /opt/ for shared users. 
 2. To launch Android Studio, open a terminal, navigate to the android-studio/bin/ directory, and execute studio.sh. 
 
-***Tip:* Add android-studio/bin/ to your PATH environment variable so you can start Android Studio from any directory**
+***Tip:*** Add android-studio/bin/ to your PATH environment variable so you can start Android Studio from any directory
 
 3. Select whether you want to import previous Android Studio settings or not, then click OK.
 4. The Android Studio Setup Wizard guides you though the rest of the setup, which includes downloading Android SDK components that are required for development.
