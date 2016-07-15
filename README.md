@@ -107,9 +107,12 @@ A CS56 project that describes how to get started with Android Programming in the
 
 ***Note:***
 If you are running a 64-bit version of Ubuntu, you need to install some 32-bit libraries with the following command:
-     sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+          
+              sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
+
 If you are running 64-bit Fedora, the command is:
-    sudo yum install zlib.i686 ncurses-libs.i686 bzip2-libs.i686**
+         
+             sudo yum install zlib.i686 ncurses-libs.i686 bzip2-libs.i686**
 
 - **Step 3: Adding any necessary SDK packages**
 - By default, Android Studio will come with all the SDK packages that you need, but if for some reason you don't have them (e.g. You installed the standalone Android Studio). As a minimum when setting up the Android SDK, you should download the latest tools and Android platform:
