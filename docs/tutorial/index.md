@@ -37,7 +37,7 @@
 4. #####[Saving and Restoring an Instance State](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md)#####
 	- [Objective](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_objective)
 	- [Managing the Activity Lifestyle](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_starting)
-	- [Setting Up App for the Save State](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_usingAs)
+	- [Setting Up App for the Save State](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_usingAS)
 	- [Saving An Activity State](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_testing)
 	- [Final Files](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_files)
 	- [Sources & Further Reading](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_sources)
