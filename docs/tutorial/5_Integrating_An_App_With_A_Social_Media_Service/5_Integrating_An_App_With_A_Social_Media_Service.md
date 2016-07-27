@@ -6,7 +6,7 @@
 
 - [Objective](#2_objective)
 - [Create A Twitter Account/Create App In Twitter Console](#2_starting)
-- [Download Twitter Library](#2_usingAS)
+- [Integrate Twitter Library](#2_usingAS)
 - [Saving An Activity State](#2_testing)
 - [Final Code](#2_files)
 - [Sources & Further Reading](#2_sources)
@@ -26,9 +26,22 @@ The objective for this tutorial is to integrate our app with a social media serv
 - **Step 4:** Go to "Keys and Access Tokens" and generate Access Tokens
 - **Step 5:** We can now use these generated tokens and the "Consumer key" and "Consumer secret" to post tweets from your app
 
-<h2 id="2_usingAS">Download Twitter Library</h2>
+<h2 id="2_usingAS">Integrate Twitter Library</h2>
+- **Step 1:** [Download the Twitter4J Library Here.] (twitter4j.org/en/) Twitter4J is an unofficial Java library for the Twitter API. With Twitter4J, you can easily integrate your Java application with the Twitter service. 
+	- *Note: Twitter4j is an unofficial library*
+- **Step 2:** Unzip the Twitter4J Library and add twitter4j-core-4.0.2.jar to libs folder of your application.
+- **Step 3:** Import the Twitter4J library. Add the following lines to your MainActivity.java Class:
 
-Twitter4J is an unofficial Java library for the Twitter API. With Twitter4J, you can easily integrate your Java application with the Twitter service. Note that twitter4j is an unofficial library. [Download the Twitter4J Library Here] (twitter4j.org/en/)
+```Java
+import twitter4j.StatusUpdate;
+import twitter4j.Twitter;
+import twitter4j.TwitterException;
+import twitter4j.TwitterFactory;
+import twitter4j.auth.AccessToken;
+```
+
+
+
 
 ```Java
 int counter;
