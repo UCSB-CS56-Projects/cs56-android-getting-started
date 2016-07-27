@@ -65,7 +65,7 @@ if (prime) {
 ```
 We then add a Medium Text Widget to display the number of prime integers that the user has entered (the value of _counter). 
 
-![Taken from DeveloperAndroid](basic-lifecycle-savestate.png)
+![Taken from DeveloperAndroid](Counter_added.png)
 
 As your activity begins to stop, the system calls onSaveInstanceState() so your activity can save state information with a collection of key-value pairs. The default implementation of this method saves information about the state of the activity's view hierarchy, such as the text in an EditText widget or the scroll position of a ListView.
 
