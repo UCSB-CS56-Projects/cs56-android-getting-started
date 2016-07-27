@@ -19,6 +19,13 @@ The objective for this tutorial is to integrate our app with a social media serv
 
 <h2 id="2_starting">Create A Twitter Account/Create App In Twitter Console</h2>
 
+	- **Step 1:** [Create a Twitter Account] (https://mobile.twitter.com/signup) for the App.
+	 	- *Note: You can use your personal twitter account but a phone number must be linked to the account to manage applications*
+	- **Step 2:** [Create new app] (https://dev.twitter.com/apps) in Twitter Console. Log in and click on "Create New App", then fill in the form and create the application.
+	- **Step 3:** Go to "Settings" and under Application type set the Access type to "Read and Write" and save the settings.
+	- **Step 4:** Go to "Keys and Access Tokens" and generate Access Tokens
+	- **Step 5:** We can now use these generated tokens and the "Consumer key" and "Consumer secret" to post tweets from your app
+
 1. We must first [create a Twitter Account] (https://mobile.twitter.com/signup) for the App.
 
 2.  Create New App in Twitter console
