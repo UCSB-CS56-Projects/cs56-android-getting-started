@@ -25,6 +25,7 @@
 	- [Final Files](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_files)
 	- [Sources & Further Reading](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_sources)
 
+
 3. #####[Intro to Services and Broadcast Receivers](3_Intro_to_Services/3_Intro_to_Services.md)#####
 	- [Objective](3_Intro_to_Services/3_Intro_to_Services.md#3_objective)
 	- [Services Basics](3_Intro_to_Services/3_Intro_to_Services.md#3_basics)
@@ -32,6 +33,14 @@
 	- [Coding the App](3_Intro_to_Services/3_Intro_to_Services.md#3_coding)
 	- [Final Code](3_Intro_to_Services/3_Intro_to_Services.md#3_files)
 	- [Sources & Further Reading](3_Intro_to_Services/3_Intro_to_Services.md#3_sources)
+
+4. #####[Building your first Android App](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md)#####
+	- [Objective](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_objective)
+	- [Managing the Activity Lifestyle](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md.md#2_starting)
+	- [Setting Up App for the Save State](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_usingAs)
+	- [Saving An Activity State](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_testing)
+	- [Final Files](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_files)
+	- [Sources & Further Reading](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_sources)
 
 
 7. #####[Credits & Extra Links](7_links/7_links.md)#####
