@@ -45,7 +45,7 @@ import twitter4j.auth.AccessToken;
 - **Step 1:** Add a new button to the application layout. This will be the button which "Tweets" the number of primes.
 - **Step 2:** Add code for the tweet_primes method:
 ```Java
-    public void tweet_score(View v){
+    public void tweet_primes(View v){
         String message = "" + counter + " Prime Integers Entered"
         String token ="<Your access token>";
         String secret = "<Your access token secret>";
@@ -63,54 +63,10 @@ import twitter4j.auth.AccessToken;
 
     }
 ```
+- *Note: You must enter your own Tokens, Keys, and Secrets*
+
 - **Step 3:** Modify the onClick() property of the button to call tweet_primes method
-- **Step 2:**
-
-
-We must add a method to MainActivity to save the instance state. Before the Activity is destroyed, Android automatically calls OnSaveInstanceState and passes in a Bundle that we can use to store our instance state. We will use it to save our count as an integer value:
-
-```Java
-    public void tweet_score(View v){
-        String message = "" + correct + " out of " + guesscount + " guesses!";
-        String token ="758322037647519744-QriVk2xKRtuaiaLoYgJRid4CHjYmI7I";
-        String secret = "aluwC59MlojhobhlgfdKFzi926Woz9csslUqduUJLBokZ";
-        AccessToken a = new AccessToken(token,secret);
-        Twitter twitter = new TwitterFactory().getInstance();
-        twitter.setOAuthConsumer("9vezAdo9kFunTgCyva3kRLZZ6", "jOEeY2F6U4ovaO9WvGYpaEAilQ5HO3LrVDlVjjfzLsIGrCb69i");
-        twitter.setOAuthAccessToken(a);
-        try {
-
-           twitter.updateStatus(message);
-        } catch (TwitterException e) {
-            // TODO Auto-generated catch block
-            Log.d("Failed to post!", e.getMessage());
-        }
-
-
-    }
-```
-When the Activity is recreated and resumed, Android passes this Bundle back into our OnCreate method. We must now add the following code to OnCreate to restore the counter value from the passed-in Bundle:
-
-```Java
-if (savedInstanceState != null){
-    counter = savedInstanceState.getInt("prime_count");
-}
-```
-Instead of restoring the state during onCreate() you may choose to implement onRestoreInstanceState(), which the system calls after the onStart() method. The system calls onRestoreInstanceState() only if there is a saved state to restore, so you do not need to check whether the Bundle is null:
-
-```Java
-protected void onRestoreInstanceState(Bundle savedInstanceState) {
-    super.onRestoreInstanceState(savedInstanceState);
-    counter = savedInstanceState.getInt("prime_count");
-}
-
-```
-
-**Caution:** Always call the superclass implementation of onRestoreInstanceState() so the default implementation can restore the state of the view hierarchy
-
-Build and run the app again, then enter some prime numbers. When we rotate the device to landscape mode, the count is saved!
-
-
+- **Step 4:** Build and Run the Application!
 
 <h2 id="2_sources">Sources & Further Reading</h2>
 - Posting To Twitter, Facebook...: https://www.git-tower.com/blog/automated-posting-to-social-media-platforms/
