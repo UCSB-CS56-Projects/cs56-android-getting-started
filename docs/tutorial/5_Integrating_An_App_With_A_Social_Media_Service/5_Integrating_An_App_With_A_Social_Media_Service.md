@@ -300,9 +300,9 @@ public class MainActivity extends ActionBarActivity {
 ```
 
 <h2 id="2_sources">Sources & Further Reading</h2>
-- Android Activities: https://developer.android.com/guide/components/activities.html
-- Android Recreating An Activity: https://developer.android.com/training/basics/activity-lifecycle/recreating.html 
-- Walkthrough Saving The Activity State: https://developer.xamarin.com/guides/android/application_fundamentals/activity_lifecycle/saving_state_walkthrough/
+- Posting To Twitter, Facebook...: https://www.git-tower.com/blog/automated-posting-to-social-media-platforms/
+- How To Integrate Twitter In Android Application: http://stacktips.com/tutorials/android/how-to-integrate-twitter-in-android-application
+- How To Post A Tweet in an Android App: https://stackoverflow.com/questions/10272355/how-to-post-a-tweet-from-an-android-app-to-one-specific-account
 
 ----------
 ######[Back to index](../index.md)######
