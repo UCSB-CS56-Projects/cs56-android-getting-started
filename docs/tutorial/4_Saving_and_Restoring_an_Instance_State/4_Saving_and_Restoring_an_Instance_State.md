@@ -404,10 +404,9 @@ public class MainActivity extends ActionBarActivity {
 ```
 
 <h2 id="2_sources">Sources & Further Reading</h2>
-- Android Studio Tips and Tricks: https://developer.android.com/sdk/installing/studio-tips.html
-- Android Input Controls: https://developer.android.com/guide/topics/ui/controls.html 
-- Android Interface Tutorial: https://developer.android.com/training/basics/firstapp/building-ui.html
-- Tuts+ Android GUI Tutorial: http://code.tutsplus.com/tutorials/android-sdk-user-interface-design--mobile-20323
+- Android Activities: https://developer.android.com/guide/components/activities.html
+- Android Recreating An Activity: https://developer.android.com/training/basics/activity-lifecycle/recreating.html 
+- Walkthrough Saving The Activity State: https://developer.xamarin.com/guides/android/application_fundamentals/activity_lifecycle/saving_state_walkthrough/
 
 ----------
 ######[Back to index](../index.md)######
