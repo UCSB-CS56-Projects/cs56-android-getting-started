@@ -1,5 +1,5 @@
 #CS56: Android Tutorial#
-<h6>Last updated: pmsosa | Winter 2015</h6>
+<h6>Last updated: osheaanaya/shanemaseda | Summer 2016</h6>
 ###INDEX###
 
 0. #####[Setting Up Android Studio](0_Installing_Software/0_Installing_Software.md)#####
