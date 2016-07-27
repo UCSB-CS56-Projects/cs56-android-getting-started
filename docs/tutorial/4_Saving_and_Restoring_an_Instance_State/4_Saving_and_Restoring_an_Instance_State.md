@@ -56,15 +56,16 @@ We first modify the simple "Test Prime" application to count the number of prime
 ```Java
 int _counter = 0;
 ```
-Then we add the following code to the test_prime method to increment _counter everytime isPrime is true:
+Then we add the following code to the test_prime method to increment _counter everytime isPrime returns true:
 ```Java
 if (prime) {
 	textView2.setText(i + " is a prime");
 	_counter++; //added line
 	}
 ```
+We then add a Medium Text Widget to display the number of prime integers that the user has entered (the value of _counter). 
 
-
+![Taken from DeveloperAndroid](basic-lifecycle-savestate.png)
 
 As your activity begins to stop, the system calls onSaveInstanceState() so your activity can save state information with a collection of key-value pairs. The default implementation of this method saves information about the state of the activity's view hierarchy, such as the text in an EditText widget or the scroll position of a ListView.
 
