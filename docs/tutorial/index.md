@@ -42,6 +42,12 @@
 	- [Final Files](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_files)
 	- [Sources & Further Reading](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_sources)
 
+5. #####[Integrating An Application With A Social Media Service](5_Integrating_An_App_With_A_Social_Media_Service/5_Integrating_An_App_With_A_Social_Media_Service.md)#####
+	- [Objective](5_Integrating_An_App_With_A_Social_Media_Service/5_Integrating_An_App_With_A_Social_Media_Service.md#2_objective)
+	- [Create A Twitter Account/Create App In Twitter Console](5_Integrating_An_App_With_A_Social_Media_Service/5_Integrating_An_App_With_A_Social_Media_Service.md#2_starting)
+	- [Integrate Twitter Library](5_Integrating_An_App_With_A_Social_Media_Service/5_Integrating_An_App_With_A_Social_Media_Service#2_usingAs)
+	- [Add the Tweet Button](5_Integrating_An_App_With_A_Social_Media_Service/5_Integrating_An_App_With_A_Social_Media_Service.md#2_testing)
+	- [Sources & Further Reading](5_Integrating_An_App_With_A_Social_Media_Service/5_Integrating_An_App_With_A_Social_Media_Service.md#2_sources)
 
 7. #####[Credits & Extra Links](7_links/7_links.md)#####
 
