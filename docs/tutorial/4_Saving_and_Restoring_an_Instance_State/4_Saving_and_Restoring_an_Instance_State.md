@@ -49,21 +49,17 @@ Although the default implementation of onSaveInstanceState() saves useful inform
 A good way to test your application's ability to restore its state is to rotate the device so that the screen orientation changes. When the screen orientation changes, the system destroys and recreates the activity in order to apply alternative resources that might be available for the new screen configuration. For this reason alone, it's very important that your activity completely restores its state when it is recreated, because users regularly rotate the screen while using applications
 
 
+<h2 id="2_usingAS">Saving An Activity State</h2>
 
-<h2 id="2_usingAS">Using Android Studio</h2>
+We first modify the simple "Test Prime" application to count the number of prime integers a user has entered. We add a _counter instance variable to MainActivity:
 
-Android Studio is based of [IntelliJ IDEA](https://www.jetbrains.com/idea/). It is an Integrated Development Studio (IDE) that essentially organizes together all the possible tools you will need while developing. It has integrated debugging, gradle (and maven) support, commandline execution, Android Device Debugging and bunch of other things that will make programming for Android a breeze. 
+```Java
+int _counter = 0;
+```
 
-First let's look at the basic layout of Android Studio: *(Maybe you dont see panel 3 or 4, but don't worry we'll explain how to get them soon)*
+As your activity begins to stop, the system calls onSaveInstanceState() so your activity can save state information with a collection of key-value pairs. The default implementation of this method saves information about the state of the activity's view hierarchy, such as the text in an EditText widget or the scroll position of a ListView.
 
-![Taken from KonukoII](2_android_studio.png)
-- **(1) File editor:** As you can imagine, this is the place where you can edit your project files. *On top you can see different tabs for opened documents, and atop that you can see their location within the project.*
-- **(2)Project Navigator:** Here you can explore the files within your project.*(Access Hotkey: ALT+1 or use the 1:Project)* 
-- **(3) Android DDMS:** Here you can see debugging/log information from either your phone or emulator *(Access Hotkey: ALT+6 or use the 6:Android button)* 
-- **(4) Event Log:** This panel shows an event log of things like compiling, running, or errors.*(Accessible by clicking on the Event Log button)*
-- **(5) Background Tasks:** Shows you which tasks are happening right now (e.g compiling, uploading app to android phone/emulator, memory tracking, etc.)
-- **(6) Run and Debug:** These are the main buttons for running & debugging.
-- **(7) ADV and SDK:** These buttons bring up the ADK and SDK managers.
+To save additional state information for your activity, you must implement onSaveInstanceState() and add key-value pairs to the Bundle object. For example:
 
 
 <h2 id="2_testing">Testing and Running</h2>
