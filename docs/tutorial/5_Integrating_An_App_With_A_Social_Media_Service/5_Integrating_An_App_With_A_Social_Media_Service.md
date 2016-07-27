@@ -66,6 +66,7 @@ import twitter4j.auth.AccessToken;
 - *Note: You must enter your own Tokens, Keys, and Secrets*
 
 - **Step 3:** Modify the onClick() property of the button to call tweet_primes method
+![Taken from AndroidStudio](Layout3.png)
 - **Step 4:** Build and Run the Application!
 
 <h2 id="2_sources">Sources & Further Reading</h2>
