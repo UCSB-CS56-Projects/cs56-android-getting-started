@@ -8,8 +8,6 @@
 - [Managing the Activity Lifestyle](#2_starting)
 - [Setting Up App for the Save State](#2_usingAS)
 - [Saving An Activity State](#2_testing)
-- [Setting up a layout](#2_layout) 
-- [Coding the App](#2_programming)
 - [Final Code](#2_files)
 - [Sources & Further Reading](#2_sources)
 
