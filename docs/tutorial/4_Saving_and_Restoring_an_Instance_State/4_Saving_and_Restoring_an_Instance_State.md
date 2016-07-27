@@ -6,8 +6,8 @@
 
 - [Objective](#2_objective)
 - [Managing the Activity Lifestyle](#2_starting)
-- [Saving An Activity State](#2_usingAS)
-- [Testing & Running](#2_testing)
+- [Setting Up App for the Save State](#2_usingAS)
+- [Saving An Activity State](#2_testing)
 - [Setting up a layout](#2_layout) 
 - [Coding the App](#2_programming)
 - [Final Code](#2_files)
@@ -46,225 +46,70 @@ Although the default implementation of onSaveInstanceState() saves useful inform
 
 - **Note:** Because onSaveInstanceState() is not guaranteed to be called, you should use it only to record the transient state of the activity (the state of the UI)—you should never use it to store persistent data. Instead, you should use onPause() to store persistent data (such as data that should be saved to a database) when the user leaves the activity. In this tutorial we will record the transient state of the activity.
 
-A good way to test your application's ability to restore its state is to rotate the device so that the screen orientation changes. When the screen orientation changes, the system destroys and recreates the activity in order to apply alternative resources that might be available for the new screen configuration. For this reason alone, it's very important that your activity completely restores its state when it is recreated, because users regularly rotate the screen while using applications
+A good way to test your application's ability to restore its state is to rotate the device so that the screen orientation changes. When the screen orientation changes, the system destroys and recreates the activity in order to apply alternative resources that might be available for the new screen configuration. 
 
+<h2 id="2_usingAS">Setting Up the App for the Save State</h2>
 
-<h2 id="2_usingAS">Saving An Activity State</h2>
-
-We first modify the simple "Test Prime" application to count the number of prime integers a user has entered. We add a _counter instance variable to MainActivity:
+We first modify the simple "Test Prime" application to count the number of prime integers a user has entered. We add a counter instance variable to MainActivity:
 
 ```Java
-int _counter = 0;
+int counter = 0;
 ```
-Then we add the following code to the test_prime method to increment _counter everytime isPrime returns true:
-```Java
-if (prime) {
-	textView2.setText(i + " is a prime");
-	_counter++; //added line
-	}
-```
-We then add a Medium Text Widget to display the number of prime integers that the user has entered (the value of _counter). Our layout should look something like:
+We then add a Medium Text Widget to display the number of prime integers that the user has entered (the value of counter). Our layout should look something like:
 
 ![Taken from DeveloperAndroid](Counter_added.png)
 
-
-As your activity begins to stop, the system calls onSaveInstanceState() so your activity can save state information with a collection of key-value pairs. The default implementation of this method saves information about the state of the activity's view hierarchy, such as the text in an EditText widget or the scroll position of a ListView.
-
-To save additional state information for your activity, you must implement onSaveInstanceState() and add key-value pairs to the Bundle object. For example:
-
-
-<h2 id="2_testing">Testing and Running</h2>
-
-Congratulations! at this point you have a fully functional Android app that displays a simple activity with a "hello world!" label. Woot! At this point you should consider testing your app and make sure that everything works fine. You will probably be running and testing your app a bunch of times during the development of your app, so you want to make sure you know how to do this.
-
-<h4>Running the app</h4>
-
-First please make sure that you set-up Android Studio with either the necessary emulator or android device requirements (depending on what you are going to use)
-
-Hit the **Run** button *(Hotkey: ALT+F10)*
-Then choose either **A running device** *(android physical device)* or **Launch Emulator**.
-![Taken from KonukoII](2_launch.png)
-
-Afterwards the program will compile and run on your chosen device.
-
-<h4>Debugging with Android DDMS</h4>
-
-Android ships with a debugging tool called the Dalvik Debug Monitor Server (DDMS), which provides port-forwarding services, screen capture on the device, thread and heap information on the device, logcat, process, and radio state information, incoming call and SMS spoofing, location data spoofing, and more.
-
-While you can do a bunch of stuff with it, we are only going to show you how to do system print statements, so that you can debug your code just like you are used to.
-
-In android, to do a print statement that appears in the DDMS console, you first need to `import android.util.Log` and then you can simply call:
-
+We then add the following code to the test_prime method to increment counter everytime isPrime returns true and display it in the new Text Widget:
 ```Java
-//You can use tags to identify the source of the message (class or method)
-
-Log.d("TAG","Some Message"); //d for Debugging
-Log.e("TAG","Some Message"); //e for Error
-Log.i("TAG","Some Message"); //i for info
-Log.w("TAG","Some Message"); //w for warning
-Log.wtf("TAG","Some Message"); //wtf for....."What a Terrible Failure"
+TextView textView3 = (TextView) findViewById(R.id.textView3); //added
+if (prime) {
+	_counter++; //added
+	textView2.setText(i + " is a prime");
+	textView3.setText(_counter + " Prime Integers Entered"); //added
+	}
 ```
+When we build and run the app again, we see that the number of primes entered is now displayed. However, when we rotate the device the count is lost. As we previously stated, the Activity was paused, stopped, destroyed, recreated, restarted, then resumed during the rotation from portrait to landscape mode. Because the Activity is destroyed and recreated again when the device is rotated, its instance state is lost. Next, we will add code to save and restore the instance state.
 
-Most likely though, you will simply end up using `Log.d(tag,message)` and its all good!
+<h2 id="2_testing">Saving An Activity State</h2>
 
-<h4>"Visual Debugging"</h4>
-
-Although they aren't technically for debugging, you can use Toasts *(These are little messages that will pop on the actual screen)* for quick debugging. 
-
-To use them first ```import android.widget.Toast``` and then you can call it by ```Toast toast = Toast.makeText(context, text, duration);```
-
-In the case of this tutorial: *Context* is going to be the MainActivity so we can simply call: ```Toast.makeText(this,"Some Message!",Toast.LENGTH_LONG).show();```
-
-![Taken from KonukoII](2_Toast.png)
-
-<h2 id="2_layout">Setting up a Simple Layout</h2>
-
-	
-**Understanding the Layout Builder Screen**
-
-![Taken from KonukoII](2_layout_explain.png)
-
-- **(1) UI Preview Screen:** This is the main screen where you can drag-and-drop widgets and other GUI objects.
-- **(2) Palette: ** From here you can select any widget or UI object and drop it into the Preview Screen. *(Hint: deprecated objects will show up striked-out)*
-- **(3) Component Tree:** Shows the different UI objects and hierarchy among them.
-- **(4) Properties:** Once you select a UI object from the layout *(either by clicking on it on the Preview screen or the Component Tree)* you can change it's properties.
-- **(5) Design/Text Tabs:** You can quickly change from the GUI previewer to the the actual code with these tabs.
-
-**Building the basic Layout for our Project**
-Start by drag-and-dropping:
-- **1 Large Text :** We are going to make this a simple title explaining the app's purpose in life.
-- **1 Text Field (Number):** The field were we are going to judge the number to be a worthy prime or simply a regular composite number. Note: The nice thing about choosing the text field to be of type (Number) is that it restricts what the user can put into it by only providing a numerical keyboard when the user trys to input anything.
-- **1 Button:** The button we are going to click to decide the fate of the number we want to test
-- **1 Medium Text:** Where we are going to output the final decision, a strong "Yay!" if it's prime or a "Nay!" if it is not prime.
-
-Feel free to put them in any particular place that you want. Overall it will look something like:
-![Taken from KonukoII](2_layout.png)
-
-<h2 id="2_programming">Coding the App</h2>
-
-<h4>Importing the necessary libraries</h4>
-
-So before we start, the libraries you will need to import are:
-*(Put this on top of your MainActivity java class)*
-```Java
-import android.view.View;	//For our button callback function's parameters
-import android.widget.Toast; //For 'visual debugging' on phone
-import android.util.Log; //For actual debugging
-```
-
-<h4>Renaming the UI objects</h4>
-
-Each object in our UI layout has a set of properties. This properties describe the element's behavior and look. There are two ways of changing an elements properties.
-
-- Declare the property in the XML (This is a good way of setting default properties or properties that you know will not be changed, such as a button text.)
-	- With Android's UI designer you can simply select a UI object and change it's properties on the **Properties** panel.
-	- *Pro Tip: double clicking on a UI object will allow you to quickly change its ID or Name*
-	
-	Changing the text of a button (wether you do it on the UI editor or directly with code) will end up looking like:
-	
-	```Java
-	<Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="Click Me!"	//<--- What the button will display as text
-        android:nestedScrollingEnabled="false"/>
-    ```
-- Change it during runtime with code in your Activity. (This is similar to what you do when building UIs with the Java AWT or Swing Libraries.)
-	This would look like:
-	```Java
-	Button btn = (Button) findViewById(R.id.button); // First Find it in the Layout
-	btn.setText("Click Me!");
-	```
-
-Knowing this, feel free to change the UI elements to display them the way you want. Otherwise we suggest using the previous photo as reference.
-- **Note:** that for the **Text Fields** there is a property called **Hint** which is the shaded text that disappears as soon as the user starts to input something into the field. This is completely different from **Text**.
-
-<h4>Adding a callback function for our button</h4>
-First thing we need to do is code our button so that when it gets clicked we call a function. For this we will need to change the button's **'onClick'** property. 
-
-Now that you know how to change an UI object's properties you can choose to declare the button callback function however you want.
-
-- **Option 1:** Declare it on the Layout XML
-	- So wherever you have your button declared, you would just add `android:onClick="test_prime"`. 
-	- Meanwhile  on the mainActivity *(or whatever activity is actually showing implementing this Layout)* we will code a testPrime function `public void test_prime(View view){/*Do something*/;}`
-	Button Callback test_prime **must** functions have to be **public void** that take a **View** parameter.
-
-- **Option 2:** Declare it directly on the code (at the MainActivity class)
-	```Java
-	Button btn = (Button) findViewById(R.id.button);
-	btn.setOnClickListener(new View.OnClickListener() {
-	    public void test_prime(View v) {
-	    	// Do something
-	    }
-	});	
-	```
-	
-<h4>Coding the 'test_prime' function</h4>
-
-Using the previous concepts and ideas we can quickly build a simple function that not only tests for primes but also The following is going to be the test_prime function.
-
-Most of the code is pretty self explanatory, notice that the main thing when working with UI elements is to first find them using something similar to: `Button btn = (Button) findViewById(R.id.button);` and then using methods `btn.foo(x,y,z)`.
-
-Each UI element has multiple different method types. You can find out the specifics for each one at the [Android Developer Site](https://developer.android.com/guide/topics/ui/index.html)
-
+We must add a method to MainActivity to save the instance state. Before the Activity is destroyed, Android automatically calls OnSaveInstanceState and passes in a Bundle that we can use to store our instance state. We will use it to save our count as an integer value:
 
 ```Java
-//Button Callback Function//
-public void test_prime(View view){
+protected override void OnSaveInstanceState (Bundle outState)
+{
+    outState.PutInt ("prime_count", counter);
+    Log.Debug(GetType().FullName, "Activity A - Saving instance state");
 
-    //1. GET INPUT
-    TextView textView = (TextView) findViewById(R.id.editText); //Obtain the TextView element where the user provides the input
-    String str = textView.getText().toString(); //Get the text currently assigned to this input. (Since it is of inputType number we are assured that there will only be pos ints)
-
-    //2. TEST INPUT
-    if (!str.isEmpty()) { //Check that there is input
-        Log.d("test_prime","Testing number"+str);
-        int i = Integer.parseInt(str); //Turn the string into an int.
-
-        //2.1 TEST PRIMENESS
-        boolean prime = isPrime(i);
-
-        //2.2 REPORT THE RESULT
-        TextView textView2 = (TextView) findViewById(R.id.textView2);
-
-        if (prime) {textView2.setText(i + " is a prime");}
-        else { textView2.setText(i + " is not a prime");}
-
-        Log.d("test_prime",i+" -> prime:"+(boolean)prime);
-
-    } else{//The user could have pressed the button without providing any number.
-        Log.d("test_prime","No number was provided");
-        Toast.makeText(this,"No number provided",Toast.LENGTH_LONG).show();
-    }
+    // always call the base implementation!
+    base.OnSaveInstanceState (outState);    
 }
 ```
-As for the isPrime() function we have a simple algorithm to figure out primeness.
-```Java
-//Tests if a number is prime//
-private boolean isPrime(int i){
-    boolean flag = true; //All inputs are considered prime until proven composite
+When the Activity is recreated and resumed, Android passes this Bundle back into our OnCreate method. We must now add the following code to OnCreate to restore the counter value from the passed-in Bundle:
 
-    if (i < 2){ flag = false;} //0,1 are not primes
-    else if (i == 2){ flag = true;} //2 is the only even prime
-    else if ((i%2)==0){flag = false;} //Other multiple of 2 are not primes
-    else {  //Odd numbers, we must check by bruteforce.
-        for (int k = 3; k < Math.sqrt(i); k=k+2) {
-            if (i%k==0){ flag = false;}    //if i is a multiple of some k number, then it is not a prime
-        }
-    }
-    return flag;
+```Java
+if (savedInstanceState != null)
+{
+    counter = savedInstanceState.getInt("prime_count");
 }
 ```
+Instead of restoring the state during onCreate() you may choose to implement onRestoreInstanceState(), which the system calls after the onStart() method. The system calls onRestoreInstanceState() only if there is a saved state to restore, so you do not need to check whether the Bundle is null:
 
-That's all there really is to it. You just built a simple program that can help people figure out whether a number is prime or not. Wee! Now it is time for you to venture into more complex projects.
+```Java
+@Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        counter = savedInstanceState.getInt("prime_count");
+    }
+
+```
+
+**Caution:** Always call the superclass implementation of onRestoreInstanceState() so the default implementation can restore the state of the view hierarchy
+
+Build and run the app again, then enter some prime numbers. When we rotate the device to landscape mode, the count is saved!
 
 <h2 id="2_files">Final Code</h2>
 
-Here are the complete manifest and class files for this project.
-You can find the complete project [here](HelloWorld).
+Here are the complete manifest and class files for the updated project.
 
 <h5>MainActivity.java</h5>
 
