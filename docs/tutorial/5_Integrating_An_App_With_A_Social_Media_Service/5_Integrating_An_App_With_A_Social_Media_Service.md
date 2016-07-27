@@ -7,8 +7,7 @@
 - [Objective](#2_objective)
 - [Create A Twitter Account/Create App In Twitter Console](#2_starting)
 - [Integrate Twitter Library](#2_usingAS)
-- [Saving An Activity State](#2_testing)
-- [Final Code](#2_files)
+- [Add the Tweet Button](#2_testing)
 - [Sources & Further Reading](#2_sources)
 
 ---
@@ -27,6 +26,7 @@ The objective for this tutorial is to integrate our app with a social media serv
 - **Step 5:** We can now use these generated tokens and the "Consumer key" and "Consumer secret" to post tweets from your app
 
 <h2 id="2_usingAS">Integrate Twitter Library</h2>
+
 - **Step 1:** [Download the Twitter4J Library Here.] (twitter4j.org/en/) Twitter4J is an unofficial Java library for the Twitter API. With Twitter4J, you can easily integrate your Java application with the Twitter service. 
 	- *Note: Twitter4j is an unofficial library*
 - **Step 2:** Unzip the Twitter4J Library and add twitter4j-core-4.0.2.jar to libs folder of your application.
@@ -40,17 +40,55 @@ import twitter4j.TwitterFactory;
 import twitter4j.auth.AccessToken;
 ```
 
-<h2 id="2_testing">Saving An Activity State</h2>
+<h2 id="2_testing">Add The Tweet Button</h2>
+
+- **Step 1:** Add a new button to the application layout. This will be the button which "Tweets" the number of primes.
+- **Step 2:** Add code for the tweet_primes method:
+```Java
+    public void tweet_score(View v){
+        String message = "" + correct + " out of " + guesscount + " guesses!";
+        String token ="<Your access token>";
+        String secret = "<Your access token secret>";
+        AccessToken a = new AccessToken(token,secret);
+        Twitter twitter = new TwitterFactory().getInstance();
+        twitter.setOAuthConsumer("<Your consumer key>", "<Your consumer secret>");
+        twitter.setOAuthAccessToken(a);
+        try {
+
+           twitter.updateStatus(message);
+        } catch (TwitterException e) {
+            // TODO Auto-generated catch block
+            Log.d("Failed to post!", e.getMessage());
+        }
+
+
+    }
+```
+- **Step 3:** Modify the onClick() property of the button to call tweet_primes method
+- **Step 2:**
+
 
 We must add a method to MainActivity to save the instance state. Before the Activity is destroyed, Android automatically calls OnSaveInstanceState and passes in a Bundle that we can use to store our instance state. We will use it to save our count as an integer value:
 
 ```Java
-protected override void OnSaveInstanceState (Bundle outState){
-    outState.putInt("prime_count", counter);
+    public void tweet_score(View v){
+        String message = "" + correct + " out of " + guesscount + " guesses!";
+        String token ="758322037647519744-QriVk2xKRtuaiaLoYgJRid4CHjYmI7I";
+        String secret = "aluwC59MlojhobhlgfdKFzi926Woz9csslUqduUJLBokZ";
+        AccessToken a = new AccessToken(token,secret);
+        Twitter twitter = new TwitterFactory().getInstance();
+        twitter.setOAuthConsumer("9vezAdo9kFunTgCyva3kRLZZ6", "jOEeY2F6U4ovaO9WvGYpaEAilQ5HO3LrVDlVjjfzLsIGrCb69i");
+        twitter.setOAuthAccessToken(a);
+        try {
 
-    // always call the base implementation!
-    super.OnSaveInstanceState(outState);    
-}
+           twitter.updateStatus(message);
+        } catch (TwitterException e) {
+            // TODO Auto-generated catch block
+            Log.d("Failed to post!", e.getMessage());
+        }
+
+
+    }
 ```
 When the Activity is recreated and resumed, Android passes this Bundle back into our OnCreate method. We must now add the following code to OnCreate to restore the counter value from the passed-in Bundle:
 
