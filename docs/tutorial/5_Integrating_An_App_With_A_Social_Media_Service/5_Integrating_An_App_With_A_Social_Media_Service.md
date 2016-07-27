@@ -46,7 +46,7 @@ import twitter4j.auth.AccessToken;
 - **Step 2:** Add code for the tweet_primes method:
 ```Java
     public void tweet_score(View v){
-        String message = "" + correct + " out of " + guesscount + " guesses!";
+        String message = "" + counter + " Prime Integers Entered"
         String token ="<Your access token>";
         String secret = "<Your access token secret>";
         AccessToken a = new AccessToken(token,secret);
@@ -57,7 +57,6 @@ import twitter4j.auth.AccessToken;
 
            twitter.updateStatus(message);
         } catch (TwitterException e) {
-            // TODO Auto-generated catch block
             Log.d("Failed to post!", e.getMessage());
         }
 
