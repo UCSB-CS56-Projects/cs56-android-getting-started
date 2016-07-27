@@ -5,7 +5,7 @@
 <h2 id="2_index">Index</h2>
 
 - [Objective](#2_objective)
-- [Create A Twitter Account](#2_starting)
+- [Create A Twitter Account/Create App In Twitter Console](#2_starting)
 - [Setting Up App for the Save State](#2_usingAS)
 - [Saving An Activity State](#2_testing)
 - [Final Code](#2_files)
@@ -17,10 +17,14 @@
 
 The objective for this tutorial is to integrate our app with a social media service. There are a number of popular socail media service but for this tutorial we will be using the Twitter social media service.
 
-<h2 id="2_starting">Create A Twitter Account</h2>
+<h2 id="2_starting">Create A Twitter Account/Create App In Twitter Console</h2>
 
-We must first [create a Twitter Account] (https://mobile.twitter.com/signup) for the App.
--**Note:** You can use your personal Twitter account as well, but the the account must be linked to a phone number to manage an application on Twitter.
+1. We must first [create a Twitter Account] (https://mobile.twitter.com/signup) for the App.
+
+**Note:** You can use your personal Twitter account as well, but the the account must be linked to a phone number to be able to manage an application on Twitter.
+
+2. Create New App in Twitter console
+
 
 Android Studio is based of [IntelliJ IDEA](https://www.jetbrains.com/idea/). 
 
