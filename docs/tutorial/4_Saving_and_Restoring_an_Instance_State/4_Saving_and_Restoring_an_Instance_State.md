@@ -63,7 +63,7 @@ if (prime) {
 	_counter++; //added line
 	}
 ```
-We then add a Medium Text Widget to display the number of prime integers that the user has entered (the value of _counter). 
+We then add a Medium Text Widget to display the number of prime integers that the user has entered (the value of _counter). Our layout should look something like:
 
 ![Taken from DeveloperAndroid](Counter_added.png)
 
