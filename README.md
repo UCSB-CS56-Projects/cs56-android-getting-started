@@ -7,6 +7,8 @@ A CS56 project that describes how to get started with Android Programming in the
 
 ####[pmsosa Legacy Code Project: SmokeSignals](https://github.com/pmsosa/SmokeSignals)####
 
+####[osheaanaya/shanemasuda Legacy Code Project: SimpleGuessingGame](https://github.com/osheaanaya/SimpleGuessingGame)####
+
 <h1> Installing Android Studio </h1>
 <h6>Last updated: osheaanaya | Summer 2016</h6>
 
