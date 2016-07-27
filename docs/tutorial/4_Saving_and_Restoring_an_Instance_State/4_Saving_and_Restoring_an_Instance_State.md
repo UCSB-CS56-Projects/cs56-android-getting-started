@@ -53,7 +53,7 @@ A good way to test your application's ability to restore its state is to rotate 
 We first modify the simple "Test Prime" application to count the number of prime integers a user has entered. We add a counter instance variable to MainActivity:
 
 ```Java
-int counter = 0;
+int counter;
 ```
 We then add a Medium Text Widget to display the number of prime integers that the user has entered (the value of counter). Our layout should look something like:
 
@@ -63,7 +63,7 @@ We then add the following code to the test_prime method to increment counter eve
 ```Java
 TextView textView3 = (TextView) findViewById(R.id.textView3); //added
 if (prime) {
-	_counter++; //added
+	counter++; //added
 	textView2.setText(i + " is a prime");
 	textView3.setText(_counter + " Prime Integers Entered"); //added
 	}
@@ -75,31 +75,27 @@ When we build and run the app again, we see that the number of primes entered is
 We must add a method to MainActivity to save the instance state. Before the Activity is destroyed, Android automatically calls OnSaveInstanceState and passes in a Bundle that we can use to store our instance state. We will use it to save our count as an integer value:
 
 ```Java
-protected override void OnSaveInstanceState (Bundle outState)
-{
-    outState.PutInt ("prime_count", counter);
-    Log.Debug(GetType().FullName, "Activity A - Saving instance state");
+protected override void OnSaveInstanceState (Bundle outState){
+    outState.putInt("prime_count", counter);
 
     // always call the base implementation!
-    base.OnSaveInstanceState (outState);    
+    super.OnSaveInstanceState(outState);    
 }
 ```
 When the Activity is recreated and resumed, Android passes this Bundle back into our OnCreate method. We must now add the following code to OnCreate to restore the counter value from the passed-in Bundle:
 
 ```Java
-if (savedInstanceState != null)
-{
+if (savedInstanceState != null){
     counter = savedInstanceState.getInt("prime_count");
 }
 ```
 Instead of restoring the state during onCreate() you may choose to implement onRestoreInstanceState(), which the system calls after the onStart() method. The system calls onRestoreInstanceState() only if there is a saved state to restore, so you do not need to check whether the Bundle is null:
 
 ```Java
-@Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        counter = savedInstanceState.getInt("prime_count");
-    }
+protected void onRestoreInstanceState(Bundle savedInstanceState) {
+    super.onRestoreInstanceState(savedInstanceState);
+    counter = savedInstanceState.getInt("prime_count");
+}
 
 ```
 
@@ -127,12 +123,30 @@ import android.util.Log;            //For actual debugging
 
 public class MainActivity extends ActionBarActivity {
 
+    int counter; //added
+
     @Override   //You MUST implement this
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if (savedInstanceState != null){
+            counter = savedInstanceState.getInt("prime_count");
+        }
     }
 
+    @Override //added
+    protected override void OnSaveInstanceState (Bundle outState){
+        outState.putInt("prime_count", counter);
+
+        // always call the base implementation!
+        super.OnSaveInstanceState(outState);    
+    }
+    
+    @Override //added
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        counter = savedInstanceState.getInt("prime_count");
+    }
 
     @Override   //You MUST implement this
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -174,7 +188,13 @@ public class MainActivity extends ActionBarActivity {
             //2.2 REPORT THE RESULT
             TextView textView2 = (TextView) findViewById(R.id.textView2);
 
-            if (prime) {textView2.setText(i + " is a prime");}
+            TextView textView3 = (TextView) findViewById(R.id.textView3); //added
+            
+            if (prime) {
+	        counter++; //added
+	        textView2.setText(i + " is a prime");
+	        textView3.setText(_counter + " Prime Integers Entered"); //added
+	        }
             else { textView2.setText(i + " is not a prime");}
 
             Log.d("test_prime",i+" -> prime:"+(boolean)prime);
