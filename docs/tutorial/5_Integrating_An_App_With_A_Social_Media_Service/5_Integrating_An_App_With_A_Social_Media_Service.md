@@ -40,27 +40,6 @@ import twitter4j.TwitterFactory;
 import twitter4j.auth.AccessToken;
 ```
 
-
-
-
-```Java
-int counter;
-```
-We then add a Medium Text Widget to display the number of prime integers that the user has entered (the value of counter). Our layout should look something like:
-
-![Taken from DeveloperAndroid](Counter_added.png)
-
-We then add the following code to the test_prime method to increment counter everytime isPrime returns true and display it in the new Text Widget:
-```Java
-TextView textView3 = (TextView) findViewById(R.id.textView3); //added
-if (prime) {
-	counter++; //added
-	textView2.setText(i + " is a prime");
-	textView3.setText(_counter + " Prime Integers Entered"); //added
-	}
-```
-When we build and run the app again, we see that the number of primes entered is now displayed. However, when we rotate the device the count is lost. As we previously stated, the Activity was paused, stopped, destroyed, recreated, restarted, then resumed during the rotation from portrait to landscape mode. Because the Activity is destroyed and recreated again when the device is rotated, its instance state is lost. Next, we will add code to save and restore the instance state.
-
 <h2 id="2_testing">Saving An Activity State</h2>
 
 We must add a method to MainActivity to save the instance state. Before the Activity is destroyed, Android automatically calls OnSaveInstanceState and passes in a Bundle that we can use to store our instance state. We will use it to save our count as an integer value:
