@@ -34,13 +34,13 @@
 	- [Final Code](3_Intro_to_Services/3_Intro_to_Services.md#3_files)
 	- [Sources & Further Reading](3_Intro_to_Services/3_Intro_to_Services.md#3_sources)
 
-4. #####[Building your first Android App](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md)#####
+4. #####[Saving and Restoring an Instance State](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md)#####
 	- [Objective](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_objective)
 	- [Managing the Activity Lifestyle](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md.md#2_starting)
 	- [Setting Up App for the Save State](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_usingAs)
 	- [Saving An Activity State](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_testing)
-	- [Final Files](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_files)
-	- [Sources & Further Reading](2_Building_your_first_Android_App/2_Building_your_first_Android_App.md#2_sources)
+	- [Final Files](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_files)
+	- [Sources & Further Reading](4_Saving_and_Restoring_an_Instance_State/4_Saving_and_Restoring_an_Instance_State.md#2_sources)
 
 
 7. #####[Credits & Extra Links](7_links/7_links.md)#####
