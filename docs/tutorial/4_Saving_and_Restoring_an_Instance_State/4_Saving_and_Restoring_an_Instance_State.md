@@ -271,6 +271,17 @@ public class MainActivity extends ActionBarActivity {
         android:layout_marginTop="48dp"
         android:text="[Result goes here]" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Prime Integers Entered"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:hint="Prime Integers Entered" />
+
 </RelativeLayout>
 
 ```
