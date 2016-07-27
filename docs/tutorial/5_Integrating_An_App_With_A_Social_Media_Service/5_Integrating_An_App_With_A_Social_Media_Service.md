@@ -21,8 +21,6 @@ The objective for this tutorial is to integrate our app with a social media serv
 
 1. We must first [create a Twitter Account] (https://mobile.twitter.com/signup) for the App.
 
-**Note:** You can use your personal Twitter account as well, but the account must be linked to a phone number to be able to manage an application on Twitter.
-
 2.  Create New App in Twitter console
 
 Android Studio is based of [IntelliJ IDEA](https://www.jetbrains.com/idea/). 
