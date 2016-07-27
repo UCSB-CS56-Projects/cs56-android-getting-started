@@ -6,7 +6,7 @@
 
 - [Objective](#2_objective)
 - [Create A Twitter Account/Create App In Twitter Console](#2_starting)
-- [Setting Up App for the Save State](#2_usingAS)
+- [Download Twitter Library](#2_usingAS)
 - [Saving An Activity State](#2_testing)
 - [Final Code](#2_files)
 - [Sources & Further Reading](#2_sources)
@@ -26,44 +26,9 @@ The objective for this tutorial is to integrate our app with a social media serv
 - **Step 4:** Go to "Keys and Access Tokens" and generate Access Tokens
 - **Step 5:** We can now use these generated tokens and the "Consumer key" and "Consumer secret" to post tweets from your app
 
-1. We must first [create a Twitter Account] (https://mobile.twitter.com/signup) for the App.
+<h2 id="2_usingAS">Download Twitter Library</h2>
 
-2.  Create New App in Twitter console
-
-Android Studio is based of [IntelliJ IDEA](https://www.jetbrains.com/idea/). 
-
-Managing the lifecycle of your activities by implementing callback methods is crucial to developing a strong and flexible application. The lifecycle of an activity is directly affected by its association with other activities, its task and back stack.
-
-An activity can exist in essentially three states:
-
-- Resumed:
-    - The activity is in the foreground of the screen and has user focus. (This state is also sometimes referred to as "running".)
-- Paused:
-    - Another activity is in the foreground and has focus, but this one is still visible. That is, another activity is visible on top of this one and that activity is partially transparent or doesn't cover the entire screen. A paused activity is completely alive (the Activity object is retained in memory, it maintains all state and member information, and remains attached to the window manager), but can be killed by the system in extremely low memory situations.
-- Stopped:
-    - The activity is completely obscured by another activity (the activity is now in the "background"). A stopped activity is also still alive (the Activity object is retained in memory, it maintains all state and member information, but is not attached to the window manager). However, it is no longer visible to the user and it can be killed by the system when memory is needed elsewhere.
-
-When an activity is paused or stopped, the state of the activity is retained because the Activity object is still held in memory and all information about its members and current state is still alive. Thus, any changes the user made within the activity are retained so that when the activity returns to the foreground (when it "resumes"), those changes are still there.
-
-However, when the system destroys an activity in order to recover memory, the Activity object is destroyed, so the system cannot simply resume it with its state intact. Instead, the system must recreate the Activity object if the user navigates back to it. Yet, the user is unaware that the system destroyed the activity and recreated it and, thus, probably expects the activity to be exactly as it was. In this situation, you can ensure that important information about the activity state is preserved by implementing an additional callback method that allows you to save information about the state of your activity: onSaveInstanceState().
-
-The system calls onSaveInstanceState() before making the activity vulnerable to destruction. The system passes this method a Bundle in which you can save state information about the activity as name-value pairs, using methods such as putString() and putInt(). Then, if the system kills your application process and the user navigates back to your activity, the system recreates the activity and passes the Bundle to both onCreate() and onRestoreInstanceState(). Using either of these methods, you can extract your saved state from the Bundle and restore the activity state. If there is no state information to restore, then the Bundle passed to you is null (which is the case when the activity is created for the first time).
-
-![Taken from DeveloperAndroid](basic-lifecycle-savestate.png)
-
-- **Note:** There's no guarantee that onSaveInstanceState() will be called before your activity is destroyed, because there are cases in which it won't be necessary to save the state (such as when the user leaves your activity using the Back button, because the user is explicitly closing the activity). If the system calls onSaveInstanceState(), it does so before onStop() and possibly before onPause().
-
-The default implementation calls the corresponding onSaveInstanceState() method for every View in the layout, which allows each view to provide information about itself that should be saved. Almost every widget in the Android framework implements this method as appropriate, such that any visible changes to the UI are automatically saved and restored when your activity is recreated. For example, the EditText widget saves any text entered by the user and the CheckBox widget saves whether it's checked or not. 
-
-Although the default implementation of onSaveInstanceState() saves useful information about your activity's UI, you still might need to override it to save additional information. For example, you might need to save member values that changed during the activity's life (which might correlate to values restored in the UI, but the members that hold those UI values are not restored, by default). Because the default implementation of onSaveInstanceState() helps save the state of the UI, if you override the method in order to save additional state information, you should always call the superclass implementation of onSaveInstanceState() before doing any work. Likewise, you should also call the superclass implementation of onRestoreInstanceState() if you override it, so the default implementation can restore view states.
-
-- **Note:** Because onSaveInstanceState() is not guaranteed to be called, you should use it only to record the transient state of the activity (the state of the UI)—you should never use it to store persistent data. Instead, you should use onPause() to store persistent data (such as data that should be saved to a database) when the user leaves the activity. In this tutorial we will record the transient state of the activity.
-
-A good way to test your application's ability to restore its state is to rotate the device so that the screen orientation changes. When the screen orientation changes, the system destroys and recreates the activity in order to apply alternative resources that might be available for the new screen configuration. 
-
-<h2 id="2_usingAS">Setting Up the App for the Save State</h2>
-
-We first modify the simple "Test Prime" application to count the number of prime integers a user has entered. We add a counter instance variable to MainActivity:
+Twitter4J is an unofficial Java library for the Twitter API. With Twitter4J, you can easily integrate your Java application with the Twitter service. Note that twitter4j is an unofficial library. [Download the Twitter4J Library Here] (twitter4j.org/en/)
 
 ```Java
 int counter;
