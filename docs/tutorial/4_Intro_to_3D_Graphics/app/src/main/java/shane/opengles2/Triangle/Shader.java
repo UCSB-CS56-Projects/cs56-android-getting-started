@@ -32,7 +32,6 @@ public class Shader {
         GLES20.glAttachShader(program, vertexshader);
         GLES20.glAttachShader(program, fragmentshader);
         GLES20.glLinkProgram(program);
-        Log.e("same2", GLES20.glGetProgramInfoLog(program));
 
         positionhandle = GLES20.glGetAttribLocation(program, "a_pos");
         colorhandle = GLES20.glGetAttribLocation(program, "a_color");
