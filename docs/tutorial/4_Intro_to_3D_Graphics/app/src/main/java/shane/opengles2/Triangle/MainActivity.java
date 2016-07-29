@@ -1,9 +1,5 @@
 package shane.opengles2.Triangle;
 
-/**
- * Created by hannavigil on 7/15/16.
- */
-
 import android.app.Activity;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
