@@ -1,9 +1,5 @@
 package shane.opengles2.Triangle;
 
-/**
- * Created by hannavigil on 7/15/16.
- */
-
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import java.nio.FloatBuffer;
