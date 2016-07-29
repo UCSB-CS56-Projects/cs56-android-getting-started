@@ -12,7 +12,6 @@ A CS56 project that describes how to get started with Android Programming in the
 <h1> M16 final remarks </h1>
 This project is a tutorial on the basics of Android programming. To better understand this project you should read and go through all of the steps of the tutorial. You should read each section and build each of the simple applications to get a good understanding of the ins and out of an android application. You should also read up on Markdown formatting to help with writing the tutorial as that is a huge part of this project. Since this project is a tutorial there aren't many "bugs" however there is a lot of oppportunity to expand the tutorial. A few examples would be adding tutorials for implementing the Google Maps API, and for user authentication in an android application.
 
-Tell them exactly what you think would be helpful for them to know as they start the project: what the code does, what features could be added, what bugs exist, what opportunities for refactoring you see. Also add any advice you have on working with the code you have left them, for with legacy code in general.
 
 
 <h1> Installing Android Studio </h1>
