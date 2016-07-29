@@ -1,8 +1,5 @@
 package shane.opengles2.Triangle;
 
-/**
- * Created by hannavigil on 7/15/16.
- */
 import android.opengl.GLES20;
 import android.util.Log;
 
@@ -48,7 +45,6 @@ public class Shader {
 
         GLES20.glShaderSource(shader, shadertext);
         GLES20.glCompileShader(shader);
-        Log.d("same", GLES20.glGetShaderInfoLog(shader));
 
         return shader;
     }
