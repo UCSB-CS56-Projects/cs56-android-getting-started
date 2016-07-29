@@ -42,9 +42,7 @@ Services can be of two types:
 - **onCreate():** The system calls this method to preform one time setup.
 - **onDestroy():** The system calls this method to destroy the service.
 
-
-
-<h2 id="#3_broadcast">BroadcastReceiver Basics</h2>
+<h2 id="3_broadcast">BroadcastReciever Basics</h2>
 
 Before we can proceed to build our app, we need to have a simple background on BroadcastReceivers.
 
