@@ -49,7 +49,7 @@
 	- [Add the Tweet Button](5_Integrating_An_App_With_A_Social_Media_Service/5_Integrating_An_App_With_A_Social_Media_Service.md#2_testing)
 	- [Sources & Further Reading](5_Integrating_An_App_With_A_Social_Media_Service/5_Integrating_An_App_With_A_Social_Media_Service.md#2_sources)
  
-6. #####[Intro to 3D Graphics](6_Intro_to_3D_Graphics/OpenGLTutorial.md.md)#####
+6. #####[Intro to 3D Graphics](6_Intro_to_3D_Graphics/OpenGLTutorial.md)#####
 
 
 7. #####[Credits & Extra Links](7_links/7_links.md)#####
